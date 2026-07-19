@@ -1,0 +1,4 @@
+interface:
+  display_name: "Regression Bisect"
+  short_description: "Find regression-introducing commits"
+  default_prompt: "Use $regression-bisect to help with this task."

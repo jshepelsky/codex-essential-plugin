@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pre PR Review"
+  short_description: "Run the pre-PR quality gate"
+  default_prompt: "Use $pre-pr-review to help with this task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dead Code Sweep"
+  short_description: "Cross-check dead code across a repository"
+  default_prompt: "Use $dead-code-sweep to help with this task."

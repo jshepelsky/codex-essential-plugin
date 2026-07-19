@@ -1,0 +1,4 @@
+interface:
+  display_name: "Route Audit"
+  short_description: "Cross-check routes and handlers"
+  default_prompt: "Use $route-audit to help with this task."

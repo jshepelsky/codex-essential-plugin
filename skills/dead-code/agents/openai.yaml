@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dead Code"
+  short_description: "Find unreferenced code and assets"
+  default_prompt: "Use $dead-code to help with this task."

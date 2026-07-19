@@ -1,0 +1,4 @@
+interface:
+  display_name: "Copy Review"
+  short_description: "Audit copy for AI-writing patterns"
+  default_prompt: "Use $copy-review to help with this task."

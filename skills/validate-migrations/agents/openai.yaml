@@ -1,0 +1,4 @@
+interface:
+  display_name: "Validate Migrations"
+  short_description: "Validate database migration safety"
+  default_prompt: "Use $validate-migrations to help with this task."

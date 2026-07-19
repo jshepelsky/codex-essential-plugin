@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review"
+  short_description: "Review diffs with parallel specialists"
+  default_prompt: "Use $code-review to help with this task."

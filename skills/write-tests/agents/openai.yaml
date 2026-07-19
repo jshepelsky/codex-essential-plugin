@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Tests"
+  short_description: "Write tests that match project conventions"
+  default_prompt: "Use $write-tests to help with this task."

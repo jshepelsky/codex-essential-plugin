@@ -1,0 +1,4 @@
+interface:
+  display_name: "Webhook Review"
+  short_description: "Review webhook security and reliability"
+  default_prompt: "Use $webhook-review to help with this task."

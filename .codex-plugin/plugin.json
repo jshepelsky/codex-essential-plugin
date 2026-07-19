@@ -1,0 +1,40 @@
+{
+  "name": "codex-essential-plugin",
+  "version": "1.3.0",
+  "description": "Codebase-agnostic review, testing, quality, and evidence-first debugging skills that detect and adapt to each repository's stack.",
+  "author": {
+    "name": "Joshua Shepelsky",
+    "url": "https://github.com/jshepelsky"
+  },
+  "homepage": "https://github.com/jshepelsky/codex-essential-plugin",
+  "repository": "https://github.com/jshepelsky/codex-essential-plugin",
+  "license": "MIT",
+  "keywords": [
+    "code-review",
+    "security",
+    "linting",
+    "quality",
+    "testing",
+    "dependencies",
+    "dead-code"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Essentials",
+    "shortDescription": "Stack-aware code review and quality workflows",
+    "longDescription": "Review, test, debug, document, and prepare changes with stack-detecting skills and parallel Codex subagent workflows.",
+    "developerName": "Joshua Shepelsky",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Review"
+    ],
+    "websiteURL": "https://github.com/jshepelsky/codex-essential-plugin",
+    "defaultPrompt": [
+      "Use $first-run to profile this repository.",
+      "Use $code-review to review my current changes.",
+      "Use $pre-pr-review before I open a pull request."
+    ]
+  }
+}

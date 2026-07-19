@@ -1,0 +1,4 @@
+interface:
+  display_name: "Smoke Test"
+  short_description: "Smoke-test an already-running local app"
+  default_prompt: "Use $smoke-test to help with this task."

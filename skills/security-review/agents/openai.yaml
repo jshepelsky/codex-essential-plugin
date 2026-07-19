@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Review"
+  short_description: "Review code for security vulnerabilities"
+  default_prompt: "Use $security-review to help with this task."

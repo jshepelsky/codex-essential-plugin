@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit"
+  short_description: "Create focused commits from current changes"
+  default_prompt: "Use $commit to help with this task."

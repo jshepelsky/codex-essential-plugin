@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Review"
+  short_description: "Review and improve UI quality"
+  default_prompt: "Use $ui-review to help with this task."

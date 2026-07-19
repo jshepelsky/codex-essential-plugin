@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stacktrace Triage"
+  short_description: "Trace errors to their repository root cause"
+  default_prompt: "Use $stacktrace-triage to help with this task."

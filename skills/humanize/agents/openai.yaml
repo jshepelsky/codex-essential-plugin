@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanize"
+  short_description: "Rewrite prose to sound naturally human"
+  default_prompt: "Use $humanize to help with this task."

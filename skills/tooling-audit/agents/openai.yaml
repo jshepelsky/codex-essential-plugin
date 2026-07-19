@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tooling Audit"
+  short_description: "Audit and repair Codex primitives"
+  default_prompt: "Use $tooling-audit to help with this task."

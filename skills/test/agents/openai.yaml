@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test"
+  short_description: "Run suites and plan failure repairs"
+  default_prompt: "Use $test to help with this task."

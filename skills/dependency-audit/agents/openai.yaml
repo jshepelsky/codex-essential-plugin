@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dependency Audit"
+  short_description: "Audit dependency security and hygiene"
+  default_prompt: "Use $dependency-audit to help with this task."

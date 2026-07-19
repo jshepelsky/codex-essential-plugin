@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docs Sync"
+  short_description: "Find documentation drift from code"
+  default_prompt: "Use $docs-sync to help with this task."

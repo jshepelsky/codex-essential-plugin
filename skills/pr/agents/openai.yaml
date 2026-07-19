@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR"
+  short_description: "Open a PR from the current branch diff"
+  default_prompt: "Use $pr to help with this task."

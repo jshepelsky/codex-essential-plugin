@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lint"
+  short_description: "Run project lint, type, and syntax checks"
+  default_prompt: "Use $lint to help with this task."

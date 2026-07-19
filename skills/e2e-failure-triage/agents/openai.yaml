@@ -1,0 +1,4 @@
+interface:
+  display_name: "E2E Failure Triage"
+  short_description: "Diagnose end-to-end test failures"
+  default_prompt: "Use $e2e-failure-triage to help with this task."

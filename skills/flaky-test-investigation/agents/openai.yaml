@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flaky Test Investigation"
+  short_description: "Investigate flaky tests from evidence"
+  default_prompt: "Use $flaky-test-investigation to help with this task."

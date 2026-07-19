@@ -1,0 +1,4 @@
+interface:
+  display_name: "First Run"
+  short_description: "Profile a repository for Essentials"
+  default_prompt: "Use $first-run to help with this task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codebase Health"
+  short_description: "Grade repository-wide code health"
+  default_prompt: "Use $codebase-health to help with this task."

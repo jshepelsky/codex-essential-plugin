@@ -1,0 +1,4 @@
+interface:
+  display_name: "Logic Review"
+  short_description: "Find correctness bugs beyond linters"
+  default_prompt: "Use $logic-review to help with this task."

@@ -1,0 +1,30 @@
+{
+  "description": "Essentials project-profile reminder and edited-file syntax checks.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/hooks/suggest-first-run.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "apply_patch|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/hooks/lint-edited-file.sh\"",
+            "statusMessage": "Checking syntax...",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
