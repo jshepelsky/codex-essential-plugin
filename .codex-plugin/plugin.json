@@ -3,7 +3,7 @@
   "version": "1.3.0",
   "description": "Codebase-agnostic review, testing, quality, and evidence-first debugging skills that detect and adapt to each repository's stack.",
   "author": {
-    "name": "Joshua Shepelsky",
+    "name": "JShep Labs",
     "url": "https://github.com/jshepelsky"
   },
   "homepage": "https://github.com/jshepelsky/codex-essential-plugin",
@@ -23,7 +23,7 @@
     "displayName": "Essentials",
     "shortDescription": "Stack-aware code review and quality workflows",
     "longDescription": "Review, test, debug, document, and prepare changes with stack-detecting skills and parallel Codex subagent workflows.",
-    "developerName": "Joshua Shepelsky",
+    "developerName": "JShep Labs",
     "category": "Developer Tools",
     "capabilities": [
       "Read",

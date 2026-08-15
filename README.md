@@ -135,4 +135,4 @@ The plugin intentionally does not ship deprecated custom prompt files or Claude-
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) © JShep Labs LLC
