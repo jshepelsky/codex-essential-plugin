@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document"
+  short_description: "Docs, AGENTS.md, process docs"
+  default_prompt: "Use $document to help with this task."

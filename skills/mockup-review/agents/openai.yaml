@@ -1,0 +1,6 @@
+interface:
+  display_name: "Mockup Review"
+  short_description: "Critique mockups with research"
+  default_prompt: "Use $mockup-review to help with this task."
+policy:
+  allow_implicit_invocation: false

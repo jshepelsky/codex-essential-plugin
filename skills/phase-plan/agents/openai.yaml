@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Plan"
+  short_description: "Order work into phases with blockers"
+  default_prompt: "Use $phase-plan to help with this task."

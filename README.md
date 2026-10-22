@@ -2,7 +2,7 @@
 
 A codebase-agnostic Codex plugin for review, testing, debugging, and release-quality workflows. Every skill detects the repository's real language, framework, commands, and conventions instead of assuming one stack.
 
-This is the Codex-native counterpart to [claude-essential-plugin](https://github.com/jshepelsky/claude-essential-plugin). Claude commands and reviewer agents are combined into focused Codex skills, while JavaScript workflows become skills that orchestrate parallel Codex subagents.
+This is the Codex-native counterpart to [claude-essential-plugin](https://github.com/jshepelsky/claude-essential-plugin). Claude skills and reviewer agents are combined into focused Codex skills, while JavaScript workflows become skills that orchestrate parallel Codex subagents.
 
 ## Install
 
@@ -33,6 +33,44 @@ Use $pre-pr-review before I open a pull request.
 ```
 
 Codex can also choose a skill implicitly when the request matches its description.
+
+## The workflow
+
+Run `$first-run` once per project. Then `$ship <feature>` walks every step below with a checkpoint at each one, or run the steps yourself. Progress lives in `.codex/work/<slug>/` (brief, plan, mockups, test plan, phases, status, per-phase handoffs), so a new thread can `$ship resume <slug>`.
+
+| # | Step | Skill |
+|---|---|---|
+| 1 | Plan from requirements, mocks, context, and the current code; research, questions, recommendations, stack decision; covers performance, security, design, copy | `$plan` |
+| 2 | Review the plan: reuse existing code, standards, security, performance | `$review-plan plan` |
+| 3-4 | Mockups when no design was supplied, then a researched review | `$mockup create`, `$mockup review` |
+| 5-7 | Test plan (unit, browser, Playwright, simulator, API, perf, security, a11y, manual), its review, and a cross-check with the plan | `$test-plan`, `$review-plan tests`, `$review-plan all` |
+| 8-9 | Phase plan with dependencies and blockers, then a final readiness review | `$phase-plan`, `$review-plan all` |
+| 10 | Dev files: AGENTS.md, profile, feature notes | `$dev-setup` |
+| 11 | Build one phase: code, planned tests every way, per-phase code review, handoff with branch name, commit message, and how to see it | `$develop N` |
+| 12-14 | Full testing to 100% on changed files, code review with every review skill, final testing | `$test-all`, `$code-review`, `$test-all --final` |
+| 15-17 | Deploy (staging preferred), then full tests on staging or data-safe tests on production | `$deploy <env>`, `$env-test <env>` |
+| 18 | Fix loop until the environment tests are clean | (ship loops 12 → 17) |
+| 19 | Documentation, AGENTS.md, process docs | `$document` |
+
+**Codex never commits, branches, pushes, merges, or tags in this workflow.** Each phase ends with a suggested branch name and commit message; you review and commit. Git-driven deploys tell you the exact push or merge to do, then watch the pipeline. Production deploys need an explicit yes on the exact command.
+
+## Workflow skills
+
+| Skill | What it does |
+|---|---|
+| `$ship` | Orchestrates the 19-step workflow above with a checkpoint per step; `$ship resume <slug>` picks up a work folder. |
+| `$plan` | Step 1: brief + implementation plan in `.codex/work/<slug>/`. |
+| `$review-plan` | Steps 2, 6, 7, 9: fresh-context, read-only review subagents over `plan`, `tests`, `phases`, or `all`; applies fixes, asks you the rest. |
+| `$plan-review`, `$test-plan-review`, `$phase-review`, `$plan-consistency-review`, `$mockup-review` | The read-only reviewer skills those steps hand to subagents. Explicit invocation only. |
+| `$mockup` | Steps 3-4: `create` HTML mockups with research when no design exists, then `review`. |
+| `$test-plan` | Step 5: the test plan across every layer. |
+| `$phase-plan` | Step 8: dependency-ordered phases with blockers. |
+| `$dev-setup` | Step 10: AGENTS.md, profile, and feature notes. |
+| `$develop` | Step 11: build one phase, test it every way, review it, hand off. |
+| `$test-all` | Steps 12 and 14: every suite, 100% coverage on changed files, add tests, fix. |
+| `$deploy` | Step 15: preflight, deploy via the project's mechanism (you do any git action), verify. |
+| `$env-test` | Steps 16-17: tests against staging or production, data-safe on prod. |
+| `$document` | Step 19: docs, AGENTS.md, process docs, close the work folder. |
 
 ## Review and quality skills
 

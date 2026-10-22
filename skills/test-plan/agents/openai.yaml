@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Plan"
+  short_description: "Test plan across every layer"
+  default_prompt: "Use $test-plan to help with this task."

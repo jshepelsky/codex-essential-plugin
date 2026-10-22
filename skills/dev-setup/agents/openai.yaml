@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dev Setup"
+  short_description: "AGENTS.md, profile, feature notes"
+  default_prompt: "Use $dev-setup to help with this task."

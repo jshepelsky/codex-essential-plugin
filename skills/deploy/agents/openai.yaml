@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deploy"
+  short_description: "Preflight, deploy, verify"
+  default_prompt: "Use $deploy to help with this task."
