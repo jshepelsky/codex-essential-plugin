@@ -1,0 +1,4 @@
+interface:
+  display_name: "Develop"
+  short_description: "Build one phase, test it, review it, hand off"
+  default_prompt: "Use $develop to help with this task."

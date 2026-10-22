@@ -1,0 +1,4 @@
+interface:
+  display_name: "Env Test"
+  short_description: "Tests against staging or production"
+  default_prompt: "Use $env-test to help with this task."

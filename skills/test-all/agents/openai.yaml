@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test All"
+  short_description: "Every suite, 100% coverage on changed files"
+  default_prompt: "Use $test-all to help with this task."

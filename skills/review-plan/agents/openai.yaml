@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Plan"
+  short_description: "Fine-tooth review of plans"
+  default_prompt: "Use $review-plan to help with this task."

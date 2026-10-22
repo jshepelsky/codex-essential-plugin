@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mockup"
+  short_description: "Create and review HTML mockups"
+  default_prompt: "Use $mockup to help with this task."

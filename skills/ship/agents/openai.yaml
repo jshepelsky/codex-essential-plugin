@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ship"
+  short_description: "The 19-step delivery workflow"
+  default_prompt: "Use $ship to help with this task."

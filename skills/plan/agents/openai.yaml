@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan"
+  short_description: "Brief + implementation plan with research"
+  default_prompt: "Use $plan to help with this task."

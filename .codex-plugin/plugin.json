@@ -1,7 +1,7 @@
 {
   "name": "codex-essential-plugin",
-  "version": "1.3.0",
-  "description": "Codebase-agnostic review, testing, quality, and evidence-first debugging skills that detect and adapt to each repository's stack.",
+  "version": "1.4.0",
+  "description": "Codebase-agnostic 19-step $ship delivery workflow, review, testing, quality, and evidence-first debugging skills that detect and adapt to each repository's stack.",
   "author": {
     "name": "JShep Labs",
     "url": "https://github.com/jshepelsky"
@@ -16,13 +16,16 @@
     "quality",
     "testing",
     "dependencies",
-    "dead-code"
+    "dead-code",
+    "workflow",
+    "planning",
+    "deploy"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Essentials",
     "shortDescription": "Stack-aware code review and quality workflows",
-    "longDescription": "Review, test, debug, document, and prepare changes with stack-detecting skills and parallel Codex subagent workflows.",
+    "longDescription": "Plan, implement, test, review, deploy, debug, and document changes with stack-detecting skills and parallel Codex subagent workflows.",
     "developerName": "JShep Labs",
     "category": "Developer Tools",
     "capabilities": [
@@ -33,6 +36,7 @@
     "websiteURL": "https://github.com/jshepelsky/codex-essential-plugin",
     "defaultPrompt": [
       "Use $first-run to profile this repository.",
+      "Use $ship to take this feature from plan to deploy.",
       "Use $code-review to review my current changes.",
       "Use $pre-pr-review before I open a pull request."
     ]
